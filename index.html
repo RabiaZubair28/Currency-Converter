@@ -2,11 +2,51 @@
 <html>
     <head>
         <title>Currency-Converter</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+       
     </head>
     <body>
-        <h1>Hellow World</h1>
+        <div class="container">
+            <br>
+            
+            <br><br>
+            <div class="row" >
+                <div class="col-1"></div>
+                <div>
+                <h1 style="text-align: center; font-style: oblique;
+                font-weight: 900px;
+                font-size: 50px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">_Currency Converter_</h1>
+                </div>
+            </div>
+            <br>
+            <div class="row">
 
+                <div class="col-1" ></div>
+                <div class="col-5 converter" >
+                <label for="amount" style="text-align: center;" >Enter Amount: </p>
+                <input  type="number" id="amount" class="givenAmount" min="1" style="border: 1px solid black;
+                border-radius: 5px; padding: 5px;">
+                <label>From: </label>
+                <select class="From currency"></select>
+                <br>
+                <label>To: </label>
+                <select class="To currency"></select>
+    
+                <button onclick="convert()" class="button">Convert</button>
+                <label >The converted amount is: </label>
+                <input type="number" id="amount" class="convertedAmount" min="1" disabled style="border: 1px solid black;
+                border-radius: 5px;">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                <img src="img.png">
+                </div>
+            </div>
+        </div>
         <script src="script.js"></script>
+
     </body>
 </html>
