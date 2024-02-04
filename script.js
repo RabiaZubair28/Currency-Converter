@@ -4,10 +4,7 @@ const givenAmount = document.querySelector('.givenAmount')
 const convertedAmount = document.querySelector('.convertedAmount')
 
 const countries = [ 
-    
-  
     { name:'Australia Dollar', code:'AUD'},
-   
     { name:'Euro code:' ,code:'EUR'},
     { name:'Japan Yen'	,code:'JPY'},
     { name:'Switzerland Franccode',code:'CHF'},
@@ -185,6 +182,7 @@ const countries = [
     { name:'Zimbabwe Dollar'	,code:'	ZWD'},
 ]
 
+
 for(let i=0; i<countries.length; i++)
 {
     const option = document.createElement('option');
@@ -218,3 +216,4 @@ const convert = async () => {
 
 
 };
+
